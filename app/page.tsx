@@ -51,6 +51,7 @@ export default function Home() {
           {projects.map((proj) => {
             return (
               <ProjectTile
+                key={proj.title}
                 dates={proj.dates}
                 title={proj.title}
                 description={proj.description}

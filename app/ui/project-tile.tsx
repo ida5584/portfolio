@@ -21,7 +21,10 @@ export function ProjectTile({
           <div className="flex gap-x-2 text-xs">
             {concepts.map((concept) => {
               return (
-                <button className="bg-violet-400/10 text-violet-500 py-2 px-4 rounded-full">
+                <button
+                  key={concept}
+                  className="bg-violet-400/10 text-violet-500 py-2 px-4 rounded-full"
+                >
                   {concept}
                 </button>
               );
